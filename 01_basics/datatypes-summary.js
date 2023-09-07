@@ -61,3 +61,30 @@ console.log(typeof isLoggedIn);        // boolean
 // Object (native and does not implement [[Call]])	            "object"
 // Object (native or host and does implement [[Call]])	        "function"
 // Object (host and does not implement [[Call]])	            Implementation-defined except may not be "undefined", "boolean", "number", or "string".
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// stack (Primitive),  Heap (Non-Primitive)
+
+let myToutubename = "@Kamaal8127"
+
+let anothername = myToutubename
+anothername = "kamaalCoding"
+
+console.log(myToutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "@usergoogle.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "abu@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
